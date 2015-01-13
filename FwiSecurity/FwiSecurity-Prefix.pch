@@ -1,0 +1,16 @@
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+
+    // FwiCore Framework
+    #import "FwiCore.h"
+
+    // FwiData Framework
+    #import "FwiData.h"
+
+    // Project Framework
+    #import "FwiSecurity.h"
+    #import "FwiSecurity_Private.h"
+
+    #import "NSData+FwiSecurity.h"
+    #import "NSString+FwiSecurity.h"
+#endif
