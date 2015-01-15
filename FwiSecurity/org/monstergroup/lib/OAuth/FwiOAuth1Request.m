@@ -71,18 +71,18 @@
     NSDictionary *tokenParameters = [_token parameters];
     __block NSMutableArray *pairs = [NSMutableArray arrayWithCapacity:(5 + _params.count + tokenParameters.count)];
 
-	[pairs addObject:[FwiFormParameter parameterWithKey:@"oauth_consumer_key" andValue:_consumer.apiKey]];
-    [pairs addObject:[FwiFormParameter parameterWithKey:@"oauth_signature_method" andValue:@"HMAC-SHA1"]];
-    [pairs addObject:[FwiFormParameter parameterWithKey:@"oauth_timestamp" andValue:_timestamp]];
-    [pairs addObject:[FwiFormParameter parameterWithKey:@"oauth_nonce" andValue:_nonce]];
-    [pairs addObject:[FwiFormParameter parameterWithKey:@"oauth_version" andValue:@"1.0"]];
+	[pairs addObject:[FwiFormParam paramWithKey:@"oauth_consumer_key" andValue:_consumer.apiKey]];
+    [pairs addObject:[FwiFormParam paramWithKey:@"oauth_signature_method" andValue:@"HMAC-SHA1"]];
+    [pairs addObject:[FwiFormParam paramWithKey:@"oauth_timestamp" andValue:_timestamp]];
+    [pairs addObject:[FwiFormParam paramWithKey:@"oauth_nonce" andValue:_nonce]];
+    [pairs addObject:[FwiFormParam paramWithKey:@"oauth_version" andValue:@"1.0"]];
 
     [tokenParameters enumerateKeysAndObjectsUsingBlock:^(NSString *key, NSString *value, BOOL *stop) {
-        [pairs addObject:[FwiFormParameter parameterWithKey:key andValue:value]];
+        [pairs addObject:[FwiFormParam paramWithKey:key andValue:value]];
     }];
 
     if (![[self valueForHTTPHeaderField:@"Content-Type"] hasPrefix:@"multipart/form-data"]) {
-        [_params enumerateObjectsUsingBlock:^(FwiFormParameter *parameter, NSUInteger idx, BOOL *stop) {
+        [_params enumerateObjectsUsingBlock:^(FwiFormParam *parameter, NSUInteger idx, BOOL *stop) {
             if (![pairs containsObject:parameter]) [pairs addObject:parameter];
         }];
 	}

@@ -85,7 +85,7 @@
 
         NSArray *pairs = [response componentsSeparatedByString:@"&"];
         for (NSString *pair in pairs) {
-            FwiFormParameter *parameter = [FwiFormParameter decode:pair];
+            FwiFormParam *parameter = [FwiFormParam decode:pair];
 
             if ([parameter.key isEqualToString:@"oauth_token"]) {
                 _token = FwiRetain(parameter.value);

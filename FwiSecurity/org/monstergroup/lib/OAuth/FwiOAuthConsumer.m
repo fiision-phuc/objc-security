@@ -70,7 +70,7 @@
     // Parse autorization code
     NSArray *array = [info componentsSeparatedByString:@"&"];
     [array enumerateObjectsUsingBlock:^(NSString *token, NSUInteger idx, BOOL *stop) {
-        FwiFormParameter *parameter = [FwiFormParameter decode:token];
+        FwiFormParam *parameter = [FwiFormParam decode:token];
         if (parameter) {
             if ([parameter.key isEqualToStringIgnoreCase:@"code"]) {
                 _authorizationCode = [parameter.value retain];
