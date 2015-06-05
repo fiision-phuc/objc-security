@@ -33,7 +33,7 @@
 
 
 #pragma mark - Class's public methods
-- (void)executeBusiness {
+- (void)businessLogic {
     NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
     
     // Load X.509 certificate information

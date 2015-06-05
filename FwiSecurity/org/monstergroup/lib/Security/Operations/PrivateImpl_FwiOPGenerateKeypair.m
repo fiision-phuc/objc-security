@@ -35,7 +35,7 @@
 
 
 #pragma mark - Class's public methods
-- (void)executeBusiness {
+- (void)businessLogic {
     BOOL shouldRemove = NO;
     id<FwiHost> host  = [[FwiSP sharedInstance] host];
     

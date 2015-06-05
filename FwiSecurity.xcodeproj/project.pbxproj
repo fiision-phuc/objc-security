@@ -44,10 +44,6 @@
 		BEF95D4B1A650C7300183E43 /* PrivateImpl_FwiRsaPub.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF95D241A650C7300183E43 /* PrivateImpl_FwiRsaPub.m */; };
 		BEF95D4C1A650C7300183E43 /* PrivateImpl_FwiRsaPvt.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF95D261A650C7300183E43 /* PrivateImpl_FwiRsaPvt.m */; };
 		BEF95D4D1A650C7300183E43 /* FwiMessenger.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF95D291A650C7300183E43 /* FwiMessenger.m */; };
-		BEF95D4E1A650C7300183E43 /* FwiOAuth1Request.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF95D2C1A650C7300183E43 /* FwiOAuth1Request.m */; };
-		BEF95D4F1A650C7300183E43 /* FwiOAuthConsumer.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF95D2E1A650C7300183E43 /* FwiOAuthConsumer.m */; };
-		BEF95D501A650C7300183E43 /* FwiOAuthToken.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF95D301A650C7300183E43 /* FwiOAuthToken.m */; };
-		BEF95D511A650C7300183E43 /* FwiOAuthValue.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF95D321A650C7300183E43 /* FwiOAuthValue.m */; };
 		BEF95D521A650C7300183E43 /* FwiSP.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF95D361A650C7300183E43 /* FwiSP.m */; };
 		BEF95D531A650C7300183E43 /* FwiSS.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF95D381A650C7300183E43 /* FwiSS.m */; };
 		BEF95D541A650C7300183E43 /* PrivateImpl_FwiOPGenerateKeypair.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF95D3B1A650C7300183E43 /* PrivateImpl_FwiOPGenerateKeypair.m */; };
@@ -131,14 +127,6 @@
 		BEF95D261A650C7300183E43 /* PrivateImpl_FwiRsaPvt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrivateImpl_FwiRsaPvt.m; sourceTree = "<group>"; };
 		BEF95D281A650C7300183E43 /* FwiMessenger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FwiMessenger.h; sourceTree = "<group>"; };
 		BEF95D291A650C7300183E43 /* FwiMessenger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FwiMessenger.m; sourceTree = "<group>"; };
-		BEF95D2B1A650C7300183E43 /* FwiOAuth1Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FwiOAuth1Request.h; sourceTree = "<group>"; };
-		BEF95D2C1A650C7300183E43 /* FwiOAuth1Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FwiOAuth1Request.m; sourceTree = "<group>"; };
-		BEF95D2D1A650C7300183E43 /* FwiOAuthConsumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FwiOAuthConsumer.h; sourceTree = "<group>"; };
-		BEF95D2E1A650C7300183E43 /* FwiOAuthConsumer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FwiOAuthConsumer.m; sourceTree = "<group>"; };
-		BEF95D2F1A650C7300183E43 /* FwiOAuthToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FwiOAuthToken.h; sourceTree = "<group>"; };
-		BEF95D301A650C7300183E43 /* FwiOAuthToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FwiOAuthToken.m; sourceTree = "<group>"; };
-		BEF95D311A650C7300183E43 /* FwiOAuthValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FwiOAuthValue.h; sourceTree = "<group>"; };
-		BEF95D321A650C7300183E43 /* FwiOAuthValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FwiOAuthValue.m; sourceTree = "<group>"; };
 		BEF95D341A650C7300183E43 /* FwiHost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FwiHost.h; sourceTree = "<group>"; };
 		BEF95D351A650C7300183E43 /* FwiSP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FwiSP.h; sourceTree = "<group>"; };
 		BEF95D361A650C7300183E43 /* FwiSP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FwiSP.m; sourceTree = "<group>"; };
@@ -268,7 +256,6 @@
 				BEF95D071A650C7300183E43 /* FwiSecurity_Private.h */,
 				BEF95D081A650C7300183E43 /* Key */,
 				BEF95D271A650C7300183E43 /* Messenger */,
-				BEF95D2A1A650C7300183E43 /* OAuth */,
 				BEF95D331A650C7300183E43 /* Security */,
 				BEF95D3E1A650C7300183E43 /* Utils */,
 			);
@@ -289,12 +276,12 @@
 		BEF95D081A650C7300183E43 /* Key */ = {
 			isa = PBXGroup;
 			children = (
-				BEF95D091A650C7300183E43 /* Aes */,
-				BEF95D0B1A650C7300183E43 /* Crt */,
 				BEF95D0D1A650C7300183E43 /* FwiFactoryAES.h */,
 				BEF95D0E1A650C7300183E43 /* FwiFactoryAES.m */,
 				BEF95D0F1A650C7300183E43 /* FwiFactoryRSA.h */,
 				BEF95D101A650C7300183E43 /* FwiFactoryRSA.m */,
+				BEF95D091A650C7300183E43 /* Aes */,
+				BEF95D0B1A650C7300183E43 /* Crt */,
 				BEF95D111A650C7300183E43 /* Rsa */,
 				BEF95D151A650C7300183E43 /* Sources */,
 			);
@@ -379,21 +366,6 @@
 				BEF95D291A650C7300183E43 /* FwiMessenger.m */,
 			);
 			path = Messenger;
-			sourceTree = "<group>";
-		};
-		BEF95D2A1A650C7300183E43 /* OAuth */ = {
-			isa = PBXGroup;
-			children = (
-				BEF95D2B1A650C7300183E43 /* FwiOAuth1Request.h */,
-				BEF95D2C1A650C7300183E43 /* FwiOAuth1Request.m */,
-				BEF95D2D1A650C7300183E43 /* FwiOAuthConsumer.h */,
-				BEF95D2E1A650C7300183E43 /* FwiOAuthConsumer.m */,
-				BEF95D2F1A650C7300183E43 /* FwiOAuthToken.h */,
-				BEF95D301A650C7300183E43 /* FwiOAuthToken.m */,
-				BEF95D311A650C7300183E43 /* FwiOAuthValue.h */,
-				BEF95D321A650C7300183E43 /* FwiOAuthValue.m */,
-			);
-			path = OAuth;
 			sourceTree = "<group>";
 		};
 		BEF95D331A650C7300183E43 /* Security */ = {
@@ -547,16 +519,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEF95D4E1A650C7300183E43 /* FwiOAuth1Request.m in Sources */,
 				BEF95D451A650C7300183E43 /* FwiFactoryRSA.m in Sources */,
 				BEF95D561A650C7300183E43 /* FwiX509Utils_Private.m in Sources */,
-				BEF95D501A650C7300183E43 /* FwiOAuthToken.m in Sources */,
 				BEF95D421A650C7300183E43 /* NSString+FwiSecurity.m in Sources */,
 				BEF95D481A650C7300183E43 /* PrivateImpl_FwiKey.m in Sources */,
 				BEF95D531A650C7300183E43 /* FwiSS.m in Sources */,
 				BEF95D471A650C7300183E43 /* PrivateImpl_FwiRsaCrt.m in Sources */,
 				BEF95D441A650C7300183E43 /* FwiFactoryAES.m in Sources */,
-				BEF95D511A650C7300183E43 /* FwiOAuthValue.m in Sources */,
 				BEF95D431A650C7300183E43 /* FwiSecurity.m in Sources */,
 				BEF95D491A650C7300183E43 /* PrivateImpl_FwiRsa.m in Sources */,
 				BEF95D461A650C7300183E43 /* PrivateImpl_FwiAes.m in Sources */,
@@ -565,7 +534,6 @@
 				BEF95D4B1A650C7300183E43 /* PrivateImpl_FwiRsaPub.m in Sources */,
 				BEF95D4A1A650C7300183E43 /* PrivateImpl_FwiKeypair.m in Sources */,
 				BEF95D521A650C7300183E43 /* FwiSP.m in Sources */,
-				BEF95D4F1A650C7300183E43 /* FwiOAuthConsumer.m in Sources */,
 				BEF95D551A650C7300183E43 /* PrivateImpl_FwiOPLoadCrtCA.m in Sources */,
 				BEF95D541A650C7300183E43 /* PrivateImpl_FwiOPGenerateKeypair.m in Sources */,
 				BEF95D411A650C7300183E43 /* NSData+FwiSecurity.m in Sources */,
@@ -823,6 +791,7 @@
 				BEF95CFB1A650B5D00183E43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
